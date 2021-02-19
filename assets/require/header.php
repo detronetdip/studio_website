@@ -7,7 +7,7 @@ require('function.php');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nandi Studio</title>
+    <title>*******</title>
     <link
       rel="shortcut icon"
       href="assets/images/Logo.png"
