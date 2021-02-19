@@ -4,3 +4,4 @@ Make sure git is installed in your device, then copy this repository by typing t
 ``` 
 git clone https://github.com/dazal-32/studio_website
 ```
+After cloning impord .sql file in your data base and start what ever you wanna do.
