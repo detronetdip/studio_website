@@ -19,7 +19,6 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u540231764_nandi_studio`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `admin_name`, `admin_image`) VALUES
-(1, 'admin', 'admin', 'PARTHA NANDI', '6617379logo 2020.jpg');
+(1, '***', '***', '*** ***', '*** **.jpg');
 
 -- --------------------------------------------------------
 
@@ -66,8 +65,8 @@ CREATE TABLE `appointments` (
 --
 
 INSERT INTO `appointments` (`id`, `uid`, `category`, `edate`, `name`, `email`, `mobile`, `address`, `status`) VALUES
-(1, 4, 'Wedding Photography', '2021-02-19', 'ayon', 'ayondip2001@gmail.com', '4587896578', 'd', 'Canceled'),
-(2, 5, 'Wedding Videography', '2022-11-15', 'Akash Kumar Barik', 'akashbr2001@gmail.com', '8158867806', 'Kanchgeria', 'Canceled');
+(1, 4, 'Wedding Photography', '2021-02-19', 'ayon', '***@gmail.com', '4587896578', 'd', 'Canceled'),
+(2, 5, 'Wedding Videography', '2022-11-15', 'Akash Kumar Barik', '***@gmail.com', '8158867806', 'Kanchgeria', 'Canceled');
 
 -- --------------------------------------------------------
 
@@ -152,9 +151,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `status`) VALUES
-(4, 'ayon', '$2y$10$BBQHjSYIz4q33cOHdQnk5uM3GHfT2snxZ7aFxtFMUz.pcAAiC3OO6', 'cse19101@cemk.ac.in', 1),
-(5, 'AKASH', '$2y$10$E.4l5iPUyywyEKYPvW7AE.8HQpp27ikUWQblq8STwjVNRkYOSdDuy', 'akashbr2001@gmail.com', 1),
-(6, '8159873276', '$2y$10$4jCmUYr1IGfvtKLzNuBCvejytVinvl2A2pBQkBzq1AYOcN6LZG82y', 'prabirdhara721122@gmail.com', 1);
+(4, 'ayon', '$2y$10$***.pcAAiC3OO6', '***@cemk.ac.in', 1),
+(5, 'AKASH', '$2y$10$E.****.8HQpp27ikUWQblq8STwjVNRkYOSdDuy', '***@gmail.com', 1),
+(6, '8159873276', '$2y$**$*****', '***@gmail.com', 1);
 
 --
 -- Indexes for dumped tables
