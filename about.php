@@ -7,11 +7,11 @@ require('assets/require/header.php');
             <span class="ft2">About <span class="colormain">Us.</span></span>
           </div>
           <p class="about_para">
-            <span class="colormain" style="font-size:21px; font-weight: 650;">W</span> elcome to Nandi Studio, your number one source for all things
+            <span class="colormain" style="font-size:21px; font-weight: 650;">W</span> elcome to *******, your number one source for all things
             [wedding Photography,wedding Videography,wedding Album,All Online
             Solutions,etc ]. We're dedicated to giving you the very best of our
             services, with a focus on your dependability,taste and
-            uniqueness.Founded in 2010 by Partha Nandi, Nandi Studio has come a
+            uniqueness.Founded in 2010 by *******, ****** has come a
             long way from its beginnings in a small house. When I first started
             out, my passion for photography and videography drove me to action,
             and gave me the impetus to turn hard work and inspiration into to a
