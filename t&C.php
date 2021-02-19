@@ -8,12 +8,12 @@ require('assets/require/header.php');
 
 <p>
   These terms and conditions outline the rules and regulations for the use of
-  Nandi Studio's Website, located at https://pnstudio.in/.
+  ***** Website, located at ************.
 </p>
 
 <p>
   By accessing this website we assume you accept these terms and conditions. Do
-  not continue to use Nandi Studio if you do not agree to take all of the terms
+  not continue to use ****** if you do not agree to take all of the terms
   and conditions stated on this page.
 </p>
 
@@ -36,8 +36,8 @@ require('assets/require/header.php');
 <h3><strong>Cookies</strong></h3>
 
 <p>
-  We employ the use of cookies. By accessing Nandi Studio, you agreed to use
-  cookies in agreement with the Nandi Studio's Privacy Policy.
+  We employ the use of cookies. By accessing ******, you agreed to use
+  cookies in agreement with the **** Privacy Policy.
 </p>
 
 <p>
@@ -82,7 +82,7 @@ require('assets/require/header.php');
   website. Comments do not reflect the views and opinions of Nandi Studio,its
   agents and/or affiliates. Comments reflect the views and opinions of the
   person who post their views and opinions. To the extent permitted by
-  applicable laws, Nandi Studio shall not be liable for the Comments or for any
+  applicable laws, *** shall not be liable for the Comments or for any
   liability, damages or expenses caused and/or suffered as a result of any use
   of and/or posting of and/or appearance of the Comments on this website.
 </p>
