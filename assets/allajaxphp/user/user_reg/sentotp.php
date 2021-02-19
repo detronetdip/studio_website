@@ -10,7 +10,7 @@ if($ri>0){
 }else{
     $otp=rand(1111,9999);
 	$_SESSION['OTP']=$otp;
-	$email="ayondip2001@gmail.com";
+	$email="***@gmail.com";
 	$to=$_POST['mail'];
 	$subject='OTP';
 	$message="Your OTP is: ".$otp;
