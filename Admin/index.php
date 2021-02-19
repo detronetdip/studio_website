@@ -1,0 +1,11 @@
+<?php
+require('assets/require/connection.php');
+require('assets/require/function.php');
+if(isset($_SESSION['ADMIN_LOGIN'])){
+    redirect_to('admin_control_panel.html');
+    die();
+}else{
+    redirect_to('admin_login.html');
+    die();
+}
+?>

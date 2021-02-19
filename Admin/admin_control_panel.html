@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Admin panel" />
+    <title>Nandi Studio | Admin Panel</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <!--popup boxes start-->
+    <div class="popupbaselayer" id="popupbaselayer">
+      <div class="cntcmtbox" id="cntcmtbox">
+        
+      </div>
+      <div class="orderbox" id="orderbox">
+      </div> 
+    </div>
+    <!-- popup boxes end-->
+    <header class="header">
+      <div class="subheader name">Nandi Studio</div>
+      <div class="subheader hd"><span class="color1">A</span>dmin Panel</div>
+      <div class="subheader bt dg">
+        <button class="lgbtno ngm" onclick="logout()">Logout</button>
+      </div>
+    </header>
+    <div class="pagewrap">
+      <div class="navdiv">
+        <div class="adminlogo">
+          <div class="adminlogobox ngm" id="adminlogobox">
+            <img src="assets/images/Logo.png" alt="" />
+          </div>
+        </div>
+        <div class="adminwlcm">
+          <span>Welcome <span id="mname">Admin</span></span>
+        </div>
+        <div class="updateprofile">
+          <button class="updtpf ngm" onclick="show_update()">
+            Update Profile
+          </button>
+        </div>
+        <div class="navlink">
+          <ul>
+            <a href="javascript:void(0)"
+              ><li class="active" onclick="show_dashbord()">Dashbord</li></a
+            >
+            <a href="javascript:void(0)"
+              ><li onclick="show_banner()">Manage Banner</li></a
+            >
+            <a href="javascript:void(0)"
+              ><li onclick="show_order()">All Appointments</li></a
+            >
+            <a href="javascript:void(0)"
+              ><li onclick="show_user()">All Users</li></a
+            >
+            <a href="javascript:void(0)"
+            ><li onclick="show_gallery_wrap()">Gallery Master</li></a
+          >
+            <a href="javascript:void(0)"
+              ><li onclick="show_contact()">Contact Master</li></a
+            >
+          </ul>
+        </div>
+        <div class="darkmode">
+          <button class="dark ngm" onclick="switch_dark()" id="dark_mode">
+            Dark Mode
+          </button>
+          <button class="dark ngm" onclick="switch_normal()" id="normal_mode">
+            Normal Mode
+          </button>
+        </div>
+        <div class="loaderbox">
+          <div class="loaderout" id="loading">
+            <div class="loaderin">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="workpanel">
+        <!-- Dashbord wrapper start-->
+        <div class="workpanewrapper" id="dashbord_wrapper">
+          <div class="sectionheading">Dashboard</div>
+          <div class="cntwrap"></div>
+          <div class="panel_div ngm bounceInRight">
+						<div class="dash_panel_header">
+              Banner Panel
+            </div>
+            <div class="tbnrabnrdbnr">
+              <span>Total Banner:</span>
+              <span>Active Banner:</span>
+              <span>Deactive Banner:</span>
+            </div>
+            <div class="tbnrabnrdbnr" id="dash_banner"> 
+
+             
+            </div>
+          </div>
+          <div class="panel_div pd2 ngm bounceInLeft">
+						<div class="dash_panel_header">
+              User Panel
+            </div>
+            <div class="tbnrabnrdbnr">
+              <span>Total Registered User:</span>
+              <span>Active User:</span>
+              <span>Deactive User:</span>
+            </div>
+            <div class="tbnrabnrdbnr" id="dash_user">
+
+             
+
+            </div>
+          </div>
+          <div class="panel_div pd2 ngm bounceInDown">
+						<div class="dash_panel_header">
+              Order Panel
+            </div>
+            <div class="tbnrabnrdbnr">
+              <span>Total Appointments:</span>
+              <span>Appointments Requested:</span>
+              <span>Appointments Approved:</span>
+              <span>Appointments Scheduled:</span>
+              <span>Appointments Done:</span>
+            </div>
+            <div class="tbnrabnrdbnr">
+
+              <span>10</span>
+              <span>7</span>
+              <span>3</span>
+              <span>4</span>
+              <span>3</span>
+
+            </div>
+          </div>
+          <div class="panel_div ngm bounceInUp">
+						<div class="dash_panel_header">
+              Contact Panel
+            </div>
+            <div class="tbnrabnrdbnr">
+              <span>Total Query:</span>
+            </div>
+            <div class="tbnrabnrdbnr">
+
+              <span>7</span>
+
+            </div>
+          </div>
+        </div>
+        <!-- #endregion  dashbord end-->
+        <!-- banner start -->
+        <div class="workpanewrapper" id="manage_banner">
+          <div class="sectionheading">Manage Banner</div>
+          <div class="cntwrap">
+            <button class="add_banner ngm" onclick="show_add_banner_box()">Add Banner</button>
+          </div>
+          <div class="banner_row_container" id="banner_row_container_main">
+
+            
+
+          </div>
+          <div class="addbanner_container" id="banner_row_container">
+            <div class="dash_panel_header cb">
+              Add New Banner
+            </div>
+            <div class="updt_rowe">
+              <input type="file" name="banner_image_admin" id="banner_image_add_admin">
+            </div>
+            <div class="addbannerbuttonrow">
+            <button class="updtpf ngm" onclick="add_banner_image_by_admin()">
+              Add
+            </button>
+            </div>
+          </div>
+        </div>
+        <!--banner end-->
+        <!-- order start -->
+        <div class="workpanewrapper" id="all_order">
+          <!-- orer row start-->
+       
+
+          <!-- order row end -->
+        </div>
+        <!-- order end-->
+        <!-- user start -->
+        <div class="workpanewrapper" id="all_user">
+
+        
+
+        </div>
+        <!-- user end -->
+        <!-- contact start -->
+        <div class="workpanewrapper" id="contact_master">
+
+       
+
+        </div>
+        <!--contact end-->
+        <!-- profile start-->
+        <div class="workpanewrapper" id="update_profile">
+          <div class="sectionheading">Update Profile</div>
+          <div class="upp">
+            <div class="upp_logo ngm" id="upp_logo">
+              <img src="assets/images/Logo.png" alt="" />
+            </div>
+            <div class="admin_desc">
+              <div class="dname" id="dname">Admin</div>
+              <br />
+              <button class="chn ngm" onclick="show_update_username()">
+                Update Username
+              </button>
+              <br />
+              <button class="chn ngm" onclick="show_update_password()">
+                Update Password
+              </button>
+              <br />
+              <button class="chn ngm" onclick="show_update_photo()">
+                Update Photo
+              </button>
+              <br />
+              <button class="chn ngm" onclick="show_update_admin_name()">
+                Update Admin Name
+              </button>
+            </div>
+          </div>
+          <div class="upp2">
+            <div class="upp2sub" id="update_username">
+              <div class="uni inu">Update Username</div>
+              <div class="uni">
+                <input
+                  type="text"
+                  placeholder="Enter New Username"
+                  id="update_username_input"
+                />
+                <button class="unibutton ngm" onclick="update_username()">
+                  Update
+                </button>
+              </div>
+            </div>
+            <div class="upp2sub" id="update_password">
+              <div class="uni inu">Update Password</div>
+              <div class="uni">
+                <input
+                  type="password"
+                  placeholder="Enter New Password"
+                  id="update_password_input"
+                />
+              </div>
+              <div class="uni inu">Reenter password</div>
+              <div class="uni">
+                <input
+                  type="password"
+                  placeholder="Renter New Password"
+                  id="update_password_re_input"
+                  onkeyup="checkpass()"
+                />
+                <button class="unibutton ngm" onclick="update_password()">
+                  Update
+                </button>
+              </div>
+              <span id="war" style="color: red; font-size: 11px"></span>
+            </div>
+            <div class="upp2sub" id="update_photo">
+              <div class="uni inu">Update Profile Photo</div>
+              <div class="uni">
+                <input type="file" id="update_photo_input" />
+                <button class="unibutton ngm" onclick="update_admin_photo()">Update</button>
+              </div>
+            </div>
+            <div class="upp2sub" id="update_admin_name">
+              <div class="uni inu">Update Admin Name</div>
+              <div class="uni">
+                <input
+                  type="text"
+                  placeholder="Enter New Admin Name"
+                  id="update_admin_name_input"
+                />
+                <button class="unibutton ngm" onclick="update_admin_name()">
+                  Update
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- profile end-->
+        <!-- gallery wrapper start -->
+        <div class="workpanewrapper" id="gallery_wrapper">
+          <div class="sectionheading">Manage Gallery</div>
+          <div class="cntwrap">
+            <button class="add_banner ngm" onclick="show_add_gallery_box()">Add Image</button>
+          </div>
+          <div class="galleryimagebox" id="galleryimagebox_main">
+
+          
+
+           </div>
+           <div class="galleryaddbox" id="galleryaddbox">
+            <div class="dash_panel_header cb">
+              Add New Image
+            </div>
+            <div class="updt_rowe">
+              <input type="file" name="glyimg" id="glyimg">
+            </div>
+            <div class="addbannerbuttonrow">
+            <button class="updtpf ngm" onclick="add_gallery_image_by_admin()">
+              Add
+            </button>
+            </div>
+           </div>
+          </div>
+        <!-- gallery end -->
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
